@@ -1,29 +1,33 @@
 import "../App.css";
 import { Link } from "react-router-dom";
+import Instant from "./Main";
 
 const Header = () => {
   return (
     <div className="headerContainer">
       <header>
         <img src={require("../images/teamLogo.png")} alt="" />
-        <div>
-            <Link className="color" to="/products">
+        <div className="linkContainer">
+            <Link className="colorOfLinks" to="/products">
                 Products
             </Link>
-            <Link className="color" to="/services">
+            <Link className="colorOfLinks" to="/services">
                 Services
             </Link>
-            <Link className="color" to="/contact">
+            <Link className="colorOfLinks" to="/contact">
                 Contact
             </Link>
-            <Link className="color" to="/login">
+            <Link className="colorOfLinks" to="/login">
                 Log in
             </Link>
             <Link className="spclOne" to="/getAccess">
-            Get Access
+              Get Access
             </Link>
         </div>
       </header>
+      <Instant title="Instant collaborations for remote teams"
+        text="All in one for your remote team chats, 
+        collaboration and track projects"/>
     </div>
   );
 };
