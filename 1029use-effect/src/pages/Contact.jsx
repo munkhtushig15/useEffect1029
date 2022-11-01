@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react'
+import "../App.css";
 
 export class Contact extends PureComponent {
   render() {
     return (
-      <div>Contact</div>
+      <div className='Contact'>Contact</div>
     )
   }
 }
