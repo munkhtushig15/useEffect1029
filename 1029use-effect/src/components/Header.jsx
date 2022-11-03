@@ -1,14 +1,14 @@
 import "../App.css";
 import { Link } from "react-router-dom";
 import Instant from "./Main";
-import { Button } from "react-bootstrap"
+// import { Button } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
   return (
     <div className="headerContainer">
       <header>
-        <img src={require("../images/teamLogo.png")} alt="" />
+        <img src={require("../images/teamLogo.png")} alt="logo" />
         <div className="linkContainer">
           <Link className="colorOfLinks" to="/products">
               Products
@@ -27,9 +27,9 @@ const Header = () => {
           </Link>
         </div>
       </header>
-      <Instant title="Instant collaborations for remote teams"
-        text="All in one for your remote team chats, 
-        collaboration and track projects"/>
+        <Instant title="Instant collaborations for remote teams"
+          text="All in one for your remote team chats, 
+          collaboration and track projects"/>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Activities = ({Title, Texts, Image, To}) => {
                     </Link> 
                 </div> 
             </div>
-            <img src={Image} alt="" />
+            <img className="activitiesImg" src={Image} alt="" />
         </div>
     )
 }

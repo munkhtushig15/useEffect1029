@@ -26,6 +26,7 @@
   flex-direction: column;
   background-image: url(./images/background.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 header {
   width: 100vw;
@@ -99,10 +100,15 @@ header img {
   border-radius: 4px;
   border: 0;
 }
-
+/* 
+      y
+      e
+      a
+      h
+*/
 .Activities {
   width: 100vw;
-  height: fit-content;
+  height: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,6 +143,9 @@ header img {
   justify-content: space-between;
   align-items: center;
 }
+.activitiesImg {
+  width: 35%;
+}
 
 /*  */
 
@@ -164,7 +173,7 @@ header img {
 }
 /*  */
 .CommentContainer {
-  width: 200px;
+  width: 366px;
   height: fit-content;
   display: flex;
   flex-direction: column;
