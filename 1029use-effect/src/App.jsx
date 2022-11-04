@@ -44,8 +44,9 @@ function App() {
         <Button variant="danger">Disable</Button>
         <Button variant="dark">NICE</Button> */}
       {/* <Header /> */}
-      <Main />
+      {/* <Main /> */}
       <Routes>
+        <Route path='/' element={<Main />} />
         <Route path="/products" element={<Products />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />

@@ -11,6 +11,28 @@
   padding: 0;
   margin: 0;
 }
+.teamLogoStyle {
+  width: 80px;
+  height: 60px;
+}
+.ContainerOther {
+  background-color: #fff;
+}
+.productVersion {
+  font-weight: 600;
+  color:#6D7D8B;
+  text-decoration:underline;
+}
+.specialOne {
+  color: #4DA0FD;
+  font-weight: 500;
+  background-color: #bae0fd96;
+  backdrop-filter: blur(5px);
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid #4DA0FD;
+  padding: 5px 10px 5px 10px;
+}
 .app {
   width: 100vw;
   height: fit-content;
@@ -173,14 +195,20 @@ header img {
 }
 /*  */
 .CommentContainer {
-  width: 366px;
-  height: fit-content;
+  width: 350px;
+  height: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #fff;
-  padding: 20px;
+  padding: 25px;
   gap: 10px;  
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.containerOfStarAndComment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 #star {
   width: 24px;
@@ -203,4 +231,75 @@ header img {
 
 /* Page styles */
 
+/* Products style */
+
+.productPost {
+  width: 100vw;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0 10% 0;
+  gap: 2%;
+}
+.productPost h1 {
+  width: 700px;
+  font-size: 48px;
+}
+.productTexts {
+  width: 700px;
+  font-size: 18px;
+}
+.userInfo {
+  width: 700px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.userInfo span {
+  color:  #6D7D8B;
+  font-size: 14px;
+}
+.userInfoBottom {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 50px;
+}
+.neva {
+  width: 700px;
+  font-size: 24px;
+  color: #6D7D8B;
+}
+.madeBy {
+  display: flex;
+  flex-direction: column;
+}
+.madeBy span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.madeBy p {
+  font-size: 24px;
+}
+.madeBy div {
+  font-size: 14px;
+  color: #6D7D8B  ;
+}
+.commit {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+.commit img {
+  width: 56px;
+  height: 56px;
+}
+.commit input {
+  width: 90%;
+  height: 168px;
+}
 

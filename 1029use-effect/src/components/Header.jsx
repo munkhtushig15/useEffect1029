@@ -1,8 +1,8 @@
 import "../App.css";
 import { Link } from "react-router-dom";
-import Instant from "./Main";
+import Instant from "./Instant";
 // import { Button } from "react-bootstrap"
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
   return (
@@ -10,26 +10,31 @@ const Header = () => {
       <header>
         <img src={require("../images/teamLogo.png")} alt="logo" />
         <div className="linkContainer">
+          <Link className="colorOfLinks" to="/">
+            Main
+          </Link>
           <Link className="colorOfLinks" to="/products">
-              Products
+            Products
           </Link>
           <Link className="colorOfLinks" to="/services">
-              Services
+            Services
           </Link>
           <Link className="colorOfLinks" to="/contact">
-              Contact
+            Contact
           </Link>
           <Link className="colorOfLinks" to="/login">
-              Log in
+            Log in
           </Link>
           <Link className="spclOne" to="/getAccess">
             Get Access
           </Link>
         </div>
       </header>
-        <Instant title="Instant collaborations for remote teams"
-          text="All in one for your remote team chats, 
-          collaboration and track projects"/>
+      <Instant
+        title="Instant collaborations for remote teams"
+        text="All in one for your remote team chats, 
+          collaboration and track projects"
+      />
     </div>
   );
 };
