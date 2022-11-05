@@ -5,12 +5,16 @@ import Instant from "./Instant";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
+  // let link = useLocation();
+
+  // console.log(link.pathname);
+  // // link.pathname !== '/' ?  :
   return (
     <div className="headerContainer">
       <header>
         <img src={require("../images/teamLogo.png")} alt="logo" />
         <div className="linkContainer">
-          <Link className="colorOfLinks" to="/">
+          <Link className={"colorOfLinks"} to="../">
             Main
           </Link>
           <Link className="colorOfLinks" to="/products">

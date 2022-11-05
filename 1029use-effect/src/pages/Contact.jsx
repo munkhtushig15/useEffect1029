@@ -9,7 +9,7 @@ export class Contact extends PureComponent {
         <header>
           <img className='teamLogoStyle' src={require("../images/teamLogoTwo.png")} alt="logo" />
           <div className="linkContainer">
-            <Link className="productVersion" to="/products">
+            <Link className="productVersion" to="/">
               Main
             </Link>
             <Link className="productVersion" to="/products">

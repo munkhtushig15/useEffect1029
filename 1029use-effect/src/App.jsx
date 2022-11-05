@@ -46,14 +46,13 @@ function App() {
       {/* <Header /> */}
       {/* <Main /> */}
       <Routes>
-        <Route path='/' element={<Main />} />
+        <Route path="/" element={<Main />} />
         <Route path="/products" element={<Products />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/getAccess" element={<GetAccess />} />
       </Routes>
-      
     </div>
   );
 }
