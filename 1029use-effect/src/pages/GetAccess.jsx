@@ -15,7 +15,7 @@ export class GetAccess extends PureComponent {
               Products
             </Link>
             <Link className="productVersion" to="/services">
-              Services
+              Blog
             </Link>
             <Link className="productVersion" to="/contact">
               Contact

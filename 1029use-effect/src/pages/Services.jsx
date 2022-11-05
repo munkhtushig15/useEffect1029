@@ -22,7 +22,7 @@ const Services = () => {
             Products
           </Link>
           <Link className="productVersion" to="/services">
-            Services
+            Blog
           </Link>
           <Link className="productVersion" to="/contact">
             Contact
