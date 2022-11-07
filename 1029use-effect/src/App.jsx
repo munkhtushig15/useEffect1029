@@ -18,6 +18,7 @@ import GetAccess from "./pages/GetAccess";
 import Login from "./pages/LogIn";
 import Services from "./pages/Services";
 import { Main } from "./pages/Main";
+import {News} from "./pages/News";
 // import {Button } from "react-bootstrap"
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import {Container, Row, Col} from "react-bootstrap"
@@ -52,6 +53,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/getAccess" element={<GetAccess />} />
+        <Route path="/news" element={<News />} />
       </Routes>
     </div>
   );

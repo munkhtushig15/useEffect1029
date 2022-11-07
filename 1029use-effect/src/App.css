@@ -18,20 +18,28 @@
 .ContainerOther {
   background-color: #fff;
 }
+.linkInBlogger {
+  text-decoration: none;
+  color:#6D7D8B;
+}
 .productVersion {
+
   font-weight: 600;
   color:#6D7D8B;
-  text-decoration:underline;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .specialOne {
   color: #4DA0FD;
   font-weight: 500;
   background-color: #bae0fd96;
-  backdrop-filter: blur(5px);
   text-decoration: none;
   border-radius: 4px;
   border: 2px solid #4DA0FD;
-  padding: 5px 10px 5px 10px;
+  padding: 3%;
+  display: block;
 }
 .app {
   width: 100vw;
@@ -62,10 +70,10 @@ header img {
   height: 26px;
 }
 .linkContainer {
-  width: 40%;
+  width: 30%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .colorOfLinks {
@@ -298,10 +306,6 @@ header img {
   width: 56px;
   height: 56px;
 }
-.commit input {
-  width: 90%;
-  height: 168px;
-}
 /* Blogger container */
 
 .blogContainer {
@@ -313,6 +317,9 @@ header img {
   align-items: center;
   border-radius: 20px;
   background-color: #fff;
+}
+.productVersion {
+  width: 90%;
 }
 .blogContainer img {
   width: 100%;
@@ -335,7 +342,7 @@ header img {
   height: 54px;
 }
 .blogsContainer {
-  width: 55%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
 }
@@ -348,7 +355,7 @@ header img {
   padding-top: 60px;
 }
 .goodAfter {
-  width: 55%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -368,4 +375,45 @@ header img {
   justify-content: center;
   border: 0;
   color: #6D7D8B;
+}
+
+/*  FOOOTER */
+
+.footer {
+  width: 100vw;
+  height: 340px;
+  background-color: #252B3B;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.useCasesFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.srchEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 200px;
+}
+#srchFooter {
+  width: 100%;
+  padding: 5%;
+  font-size: 18px;
+}
+#feedBack {
+  font-size: 18px;
+  padding: 5px 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+::placeholder {
+  color: #4DA0FD;
+}
+.Hi {
+  width: 100vw;
+  height: 100vh;
+  background-color: #252B3B;
 }

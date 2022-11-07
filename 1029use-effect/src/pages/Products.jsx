@@ -27,7 +27,7 @@ export class Products extends PureComponent {
                 Log in
               </Link>
               <Link className="specialOne" to="/getAccess">
-                Get Access
+                GetAccess
               </Link>
             </div>
           </header>
@@ -71,7 +71,7 @@ export class Products extends PureComponent {
             <span className='neva'>Join the conversation</span>
             <div className="commit">
               <img src={require('../images/Avatar (5).png')} alt="avatarUser" />
-              <input type="text" id="CommentsProduct"/>
+              <textarea placeholder='Comments' name="feedBack" id="feedBack" cols="65" rows="6"></textarea>
             </div>
           </div>
         </div>

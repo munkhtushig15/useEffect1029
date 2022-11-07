@@ -24,7 +24,7 @@ export class GetAccess extends PureComponent {
               Log in
             </Link>
             <Link className="specialOne" to="/getAccess">
-              Get Access
+              GetAccess
             </Link>
           </div>
         </header>
