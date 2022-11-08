@@ -11,19 +11,26 @@
 // export default App;
 
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Products from "./pages/Products";
 import GetAccess from "./pages/GetAccess";
 import Login from "./pages/LogIn";
 import Services from "./pages/Services";
 import { Main } from "./pages/Main";
-import {News} from "./pages/News";
+import { News } from "./pages/News";
+import Header from "./components/Header";
+import { createContext, useState } from "react";
 // import {Button } from "react-bootstrap"
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import {Container, Row, Col} from "react-bootstrap"
+export const ColorModeContext = createContext();
 
 function App() {
+  const [checked, setChecked] = useState();
+  const handlerChange = () => {
+    setChecked(!checked);
+  }
   return (
     <div className="app">
       {/* <Container>
@@ -46,15 +53,22 @@ function App() {
         <Button variant="dark">NICE</Button> */}
       {/* <Header /> */}
       {/* <Main /> */}
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/getAccess" element={<GetAccess />} />
-        <Route path="/news" element={<News />} />
-      </Routes>
+      <ColorModeContext.Provider value={{handlerChange, checked}}>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="service/news" element={<News />}/>
+            <Route path="/products" element={<Products />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/getAccess" element={<GetAccess />} />
+            <Route path="/news" element={<News />} />
+          </Routes>
+        </BrowserRouter>
+      </ColorModeContext.Provider>
+      
     </div>
   );
 }

@@ -8,9 +8,13 @@ export class Products extends PureComponent {
     return (
       <>
         <div className="ContainerOther">
-          <header>
+          {/* <header>
             <img className='teamLogoStyle' src={require("../images/teamLogoTwo.png")} alt="logo" />
             <div className="linkContainer">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
               <Link className="productVersion" to="/">
                 Main
               </Link>
@@ -30,7 +34,7 @@ export class Products extends PureComponent {
                 GetAccess
               </Link>
             </div>
-          </header>
+          </header> */}
           <div className="productPost">
             <h1>10 Secrets for managing a remote team</h1>
             <div className="userInfo">

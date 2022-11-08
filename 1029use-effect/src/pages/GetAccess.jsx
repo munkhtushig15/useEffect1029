@@ -5,9 +5,13 @@ export class GetAccess extends PureComponent {
   render() {
     return (
       <div className="ContainerOther">
-        <header>
+        {/* <header>
           <img className='teamLogoStyle' src={require("../images/teamLogoTwo.png")} alt="logo" />
           <div className="linkContainer">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
             <Link className="productVersion" to="/">
               Main
             </Link>
@@ -27,7 +31,7 @@ export class GetAccess extends PureComponent {
               GetAccess
             </Link>
           </div>
-        </header>
+        </header> */}
       </div>
     )
   }

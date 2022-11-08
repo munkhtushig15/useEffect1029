@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Blogger = ({image, title, texts, profileImg, userName, date}) => {
     return (
-        <Link className="linkInBlogger" to="news">
+        <Link className="linkInBlogger" to="/service/news">
             <div className="blogContainer">
                 <img src={image} alt={image} />
                 <h2>{title}</h2>
